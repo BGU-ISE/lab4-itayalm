@@ -14,6 +14,28 @@ namespace Lab4
         //Declare an instance for log4net
         private static readonly ILog Log =
               LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+         private int passwordCheck(string username, string password)
+        {
+            string usernamer = "itay";
+            string passwordr = "1234";
+            if(usernamer == username && passwordr == password)
+            {
+                return 1;
+            }
+            username = Console.ReadLine();
+            password = Console.ReadLine();
+            if (usernamer == username && passwordr == password)
+            {
+                return 1;
+            }
+            username = Console.ReadLine();
+            password = Console.ReadLine();
+            if (usernamer == username && passwordr == password)
+            {
+                return 1;
+            }
+            return 0;
+        }
         static void Main(string[] args)
         {
             ImplementLoggingFuntion();
